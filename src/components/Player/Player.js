@@ -1,5 +1,9 @@
 import React from 'react';
 import './Player.css';
+import Button from 'react-bootstrap/Button';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faUserPlus } from '@fortawesome/free-solid-svg-icons';
 
 const Player = (props) => {
     const {name, club, country, position, salary, img} = props.player;
@@ -10,7 +14,7 @@ const Player = (props) => {
             <h4><small>Position:</small> {position}</h4>
             <p><small>Club:</small> {club}, <small>Country:</small> {country}</p>
             <p><small>Salary:</small> ${salary} Million</p>
-            <button onClick={() => props.addBtnEventHandler(props.player)}>Add</button>
+            <Button onClick={() => props.addBtnEventHandler(props.player)} variant="dark"><FontAwesomeIcon icon={faUserPlus} /> Add</Button>
         </div>
     );
 };
