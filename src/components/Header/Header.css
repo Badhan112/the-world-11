@@ -1,0 +1,17 @@
+.header nav{
+    background-color: darkslategray;
+}
+.header nav a{
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+    margin-left: 20px;
+    line-height: 50px;
+    padding: 7px;
+}
+.header nav a:hover{
+    background-color: thistle;
+}
+.header h1{
+    text-align: center;
+}

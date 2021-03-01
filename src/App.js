@@ -1,10 +1,13 @@
 
 import './App.css';
+import Footballer from './components/Footballer/Footballer';
+import Header from './components/Header/Header';
 
 function App() {
   return (
     <div>
-      <h1>All Ok</h1>
+      <Header></Header>
+      <Footballer></Footballer>
     </div>
   );
 }

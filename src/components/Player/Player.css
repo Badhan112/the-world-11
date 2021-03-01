@@ -1,0 +1,12 @@
+.player-info{
+    background-color: lightcyan;
+    margin: 5px;
+    width: 300px;
+    text-align: center;
+    padding: 5px;
+}
+.player-info .player-image{
+    height: 200px;
+    border-radius: 50%;
+    border: 2px solid cyan;
+}
