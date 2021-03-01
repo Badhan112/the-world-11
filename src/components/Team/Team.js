@@ -15,7 +15,7 @@ const Team = (props) => {
             </div>
             <div className="team-members">
                 {
-                    props.team.map(teamMember => <TeamMember teamMember={teamMember} key={teamMember.id}></TeamMember>)
+                    props.team.map(teamMember => <TeamMember teamMember={teamMember} removePlayer={props.removePlayer} key={teamMember.id}></TeamMember>)
                 }
             </div>
         </div>

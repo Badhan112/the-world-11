@@ -20,6 +20,11 @@ const Footballer = () => {
         setTeam(newTeam);
     }
 
+    const removePlayer = id =>{
+        const newTeam = team.filter(player => player.id !== id)
+        setTeam(newTeam);
+    }
+
     return (
         <Container fluid className="footballer-area">
             <Row>
@@ -31,7 +36,7 @@ const Footballer = () => {
                     </Row>
                 </Col>
                 <Col md={3}>
-                    <Team team={team}></Team>
+                    <Team team={team} removePlayer={removePlayer}></Team>
                 </Col>
             </Row>
         </Container>

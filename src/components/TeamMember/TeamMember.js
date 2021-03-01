@@ -1,4 +1,7 @@
+import { faWindowClose } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
+import { Button } from 'react-bootstrap';
 import './TeamMember.css';
 
 const TeamMember = (props) => {
@@ -11,6 +14,7 @@ const TeamMember = (props) => {
                 <p>{position}</p>
                 <p>Salary: {salary} Million</p>
             </div>
+            <Button variant="danger" onClick={() => props.removePlayer(props.teamMember.id)}><FontAwesomeIcon icon={faWindowClose} /> Cancle</Button>
         </div>
     );
 };
