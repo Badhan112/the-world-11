@@ -1,4 +1,5 @@
 import React from 'react';
+import TeamMember from '../TeamMember/TeamMember';
 import './Team.css'
 
 const Team = (props) => {
@@ -11,7 +12,9 @@ const Team = (props) => {
                 <p>Total Fees: {totalFees} Million</p>
             </div>
             <div className="team-members">
-
+                {
+                    props.team.map(teamMember => <TeamMember teamMember={teamMember} key={teamMember.id}></TeamMember>)
+                }
             </div>
         </div>
     );

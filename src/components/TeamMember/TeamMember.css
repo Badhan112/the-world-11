@@ -1,0 +1,18 @@
+.teamMember{
+    background-color: rgb(48, 48, 61);
+    color: white;
+    padding: 5px;
+    display: flex;
+    margin-top: 10px;
+}
+.teamMember .teamMember-image{
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid gray;
+}
+.teamMember .teamMember-info{
+    margin: 7px;
+}
+.teamMember > .teamMember-info > h5, p{
+    margin: 0;
+}
