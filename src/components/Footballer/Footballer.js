@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from 'react';
+import { Col, Container, Row } from 'react-bootstrap';
 import Player from '../Player/Player';
 import Team from '../Team/Team';
 import './Footballer.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 const Footballer = () => {
@@ -19,14 +21,20 @@ const Footballer = () => {
     }
 
     return (
-        <div className="footballer-area">
-            <div className="players-area">
-                {
-                    players.map(player => <Player player={player} addBtnEventHandler={addBtnEventHandler} key={player.id}></Player>)
-                }
-            </div>
-            <Team team={team}></Team>
-        </div>
+        <Container fluid className="footballer-area">
+            <Row>
+                <Col md={8}>
+                    <Row className="players-area">
+                        {
+                            players.map(player => <Player player={player} addBtnEventHandler={addBtnEventHandler} key={player.id}></Player>)
+                        }
+                    </Row>
+                </Col>
+                <Col md={3}>
+                    <Team team={team}></Team>
+                </Col>
+            </Row>
+        </Container>
     );
 };
 

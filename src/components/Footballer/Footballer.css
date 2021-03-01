@@ -1,10 +1,4 @@
-.footballer-area{
-    display: flex;
-}
 .footballer-area .players-area{
-    display: flex;
-    flex-wrap: wrap;
-    width: 70%;
     border-right: 1px solid grey;
     margin-right: 10px;
     justify-content: center;
